@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CasosCearaPorDia;
+use App\Models\CasosCearaUti;
 use App\Models\QtdPorMunicipio;
 use App\Models\QtdPorSituacao;
 
@@ -25,6 +26,12 @@ class CasosCearaController extends Controller
     public function quantidadeCasosConfirmadorPorMunicipio()
     {
         $qtdCasos = QtdPorMunicipio::all();
+        return response()->json($qtdCasos);
+    }
+
+    public function quantidadeCasosNaUti()
+    {
+        $qtdCasos = CasosCearaUti::all();
         return response()->json($qtdCasos);
     }
 }

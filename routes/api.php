@@ -22,6 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/casos-ceara-por-dia', 'CasosCearaController@casosCearaPorDia');
 Route::get('/quantidade-casos-por-situacao', 'CasosCearaController@quantidadeCasosPorSituacao');
 Route::get('/quantidade-casos-confirmados-por-municipio', 'CasosCearaController@quantidadeCasosConfirmadorPorMunicipio');
+Route::get('/casos-ceara-uti', 'CasosCearaController@quantidadeCasosNaUti');
 
 
 Route::get('/sincronize', 'SincronizadorIntegrasusController@run');
