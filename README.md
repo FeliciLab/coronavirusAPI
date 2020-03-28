@@ -34,8 +34,3 @@ http://64.227.31.11/api/quantidade-casos-confirmados-por-municipio
 http://64.227.31.11/api/casos-ceara-uti
 
 ```
-
-Route::get('/casos-novos-ceara-por-dia', 'CasosCearaController@casosNovosCearaPorDia');
-Route::get('/casos-ceara-por-dia', 'CasosCearaController@casosCearaPorDia');
-Route::get('/quantidade-casos-confirmados-por-municipio', 'CasosCearaController@quantidadeCasosConfirmadorPorMunicipio');
-Route::get('/casos-ceara-internados', 'CasosCearaController@casosCearaInternados');
