@@ -30,7 +30,7 @@ http://64.227.31.11/api/casos-ceara-por-dia
 // retorna a quantidade de casos por situação confirmada e por município no Ceará
 http://64.227.31.11/api/quantidade-casos-confirmados-por-municipio
 
-// retorna situação dos hospitais (UTI) no Ceará
-http://64.227.31.11/api/casos-ceara-uti
+// retorna situação dos internados no Ceará
+http://64.227.31.11/api/casos-ceara-internados
 
 ```
