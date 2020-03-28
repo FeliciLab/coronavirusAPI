@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CasosCearaUti extends Model
+class CasosCearaInternados extends Model
 {
     public $incrementing = false;
-    protected $table = 'casoscearaemuti';
+    protected $table = 'casoscearainternados';
 }

@@ -3,8 +3,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CasosCearaInternados;
 use App\Models\CasosCearaPorDia;
 use App\Models\CasosCearaUti;
+use App\Models\CasosNovosCearaPorDia;
 use App\Models\QtdPorMunicipio;
 use App\Models\QtdPorSituacao;
 
@@ -17,10 +19,11 @@ class CasosCearaController extends Controller
         return response()->json($casosCeara);
     }
 
-    public function quantidadeCasosPorSituacao()
+
+    public function casosNovosCearaPorDia()
     {
-        $qtdCasosPorSituacao = QtdPorSituacao::all();
-        return response()->json($qtdCasosPorSituacao);
+        $casosNovosCeara = CasosNovosCearaPorDia::all();
+        return response()->json($casosNovosCeara);
     }
 
     public function quantidadeCasosConfirmadorPorMunicipio()
@@ -29,9 +32,9 @@ class CasosCearaController extends Controller
         return response()->json($qtdCasos);
     }
 
-    public function quantidadeCasosNaUti()
+    public function casosCearaInternados()
     {
-        $qtdCasos = CasosCearaUti::all();
+        $qtdCasos = CasosCearaInternados::all();
         return response()->json($qtdCasos);
     }
 }

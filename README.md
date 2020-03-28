@@ -18,18 +18,24 @@ docker-compose up
 
 Endpoints
 ```bash
-// retorna a quantidade de casos por dia no Ceará
-http://64.227.31.11/api/casos-ceara-por-dia
 
-// retorna a quantidade de casos por situação no Ceará
-http://64.227.31.11/api/quantidade-casos-por-situacao
+
+// retorna a quantidade novos casos por dia no Ceará 
+http://64.227.31.11/api/casos-novos-ceara-por-dia
+
+// retorna a quantidade de casos por dia no Ceará (municipios)
+http://64.227.31.11/api/casos-ceara-por-dia
 
 
 // retorna a quantidade de casos por situação confirmada e por município no Ceará
 http://64.227.31.11/api/quantidade-casos-confirmados-por-municipio
 
-
 // retorna situação dos hospitais (UTI) no Ceará
 http://64.227.31.11/api/casos-ceara-uti
 
 ```
+
+Route::get('/casos-novos-ceara-por-dia', 'CasosCearaController@casosNovosCearaPorDia');
+Route::get('/casos-ceara-por-dia', 'CasosCearaController@casosCearaPorDia');
+Route::get('/quantidade-casos-confirmados-por-municipio', 'CasosCearaController@quantidadeCasosConfirmadorPorMunicipio');
+Route::get('/casos-ceara-internados', 'CasosCearaController@casosCearaInternados');

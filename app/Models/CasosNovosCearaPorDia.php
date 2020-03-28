@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class QtdPorSituacao extends Model
+class CasosNovosCearaPorDia extends Model
 {
     public $incrementing = false;
-    protected $table = 'qtdporsituacao';
+    protected $table = 'casosnovoscearapordia';
 }

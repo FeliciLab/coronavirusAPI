@@ -19,10 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });*/
 
+Route::get('/casos-novos-ceara-por-dia', 'CasosCearaController@casosNovosCearaPorDia');
 Route::get('/casos-ceara-por-dia', 'CasosCearaController@casosCearaPorDia');
-Route::get('/quantidade-casos-por-situacao', 'CasosCearaController@quantidadeCasosPorSituacao');
 Route::get('/quantidade-casos-confirmados-por-municipio', 'CasosCearaController@quantidadeCasosConfirmadorPorMunicipio');
-Route::get('/casos-ceara-uti', 'CasosCearaController@quantidadeCasosNaUti');
-
-
-Route::get('/sincronize', 'SincronizadorIntegrasusController@run');
+Route::get('/casos-ceara-internados', 'CasosCearaController@casosCearaInternados');
