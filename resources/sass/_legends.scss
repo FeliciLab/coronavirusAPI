@@ -1,0 +1,34 @@
+  $colors: (
+    3498DB: #3498DB,
+    fab822: #fab822,
+    fb397a: #fb397a,
+    5d78ff: #5d78ff,
+    f0b800: #f0b800,
+    1fbb87: #1fbb87,
+    ea2c59: #ea2c59,
+    0088ff: #0088ff,
+    e06100: #e06100,
+    00b771: #00b771,
+    bbbbe3: #bbbbe3,
+    e02b20: #e02b20,
+    74a7a9: #74a7a9,
+    ec9051: #ec9051,
+    0193d8: #0193d8,
+    78be41: #78be41,
+    b83430: #b83430,
+    418e88: #418e88,
+    659ee3: #659ee3
+  );
+
+  .legend {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+
+  @each $key, $color in $colors {
+    .legend-#{$key} {
+      background-color: #{$color}
+    }
+  }
