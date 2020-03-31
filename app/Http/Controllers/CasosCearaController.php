@@ -9,32 +9,55 @@ use App\Models\CasosCearaUti;
 use App\Models\CasosNovosCearaPorDia;
 use App\Models\QtdPorMunicipio;
 use App\Models\QtdPorSituacao;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Schema;
 
 
 class CasosCearaController extends Controller
 {
-    public function casosCearaPorDia()
+    public function casosCearaPorDia(Request $request, $type = null)
     {
-        $casosCeara = CasosCearaPorDia::all();
-        return response()->json($casosCeara);
+        $dados = CasosCearaPorDia::all();
+
+        if ($type == Controller::TYPE_RETURN_CSV) {
+            return $this->returnObjectCsv()->build($dados, Schema::getColumnListing('casoscearapordia'))->download();
+        }
+
+        return response()->json($dados);
     }
 
 
-    public function casosNovosCearaPorDia()
+    public function casosNovosCearaPorDia(Request $request, $type = null)
     {
-        $casosNovosCeara = CasosNovosCearaPorDia::all();
-        return response()->json($casosNovosCeara);
+        $dados = CasosNovosCearaPorDia::all();
+        if ($type == Controller::TYPE_RETURN_CSV) {
+            return $this->returnObjectCsv()->build($dados, Schema::getColumnListing('casosnovoscearapordia'))->download();
+        }
+
+        return response()->json($dados);
     }
 
-    public function quantidadeCasosConfirmadorPorMunicipio()
+    public function quantidadeCasosConfirmadorPorMunicipio(Request $request, $type = null)
     {
-        $qtdCasos = QtdPorMunicipio::all();
-        return response()->json($qtdCasos);
+        $dados = QtdPorMunicipio::all();
+
+        if ($type == Controller::TYPE_RETURN_CSV) {
+            return $this->returnObjectCsv()->build($dados, Schema::getColumnListing('qtdpormunicipio'))->download();
+        }
+
+        return response()->json($dados);
     }
 
-    public function casosCearaInternados()
+    public function casosCearaInternados(Request $request, $type = null)
     {
-        $qtdCasos = CasosCearaInternados::all();
-        return response()->json($qtdCasos);
+        $dados = CasosCearaInternados::all();
+
+        if ($type == Controller::TYPE_RETURN_CSV) {
+            return $this->returnObjectCsv()->build($dados, Schema::getColumnListing('casoscearainternados'))->download();
+        }
+
+        return response()->json($dados);
     }
+
+
 }

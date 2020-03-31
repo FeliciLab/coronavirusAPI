@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware(['auth:api'])->group(function () {
-    Route::get('/casos-ceara-internados', 'CasosCearaController@casosCearaInternados');
+    Route::get('/casos-ceara-internados/{type?}', 'CasosCearaController@casosCearaInternados');
 });
 
-Route::get('/casos-novos-ceara-por-dia', 'CasosCearaController@casosNovosCearaPorDia');
-Route::get('/casos-ceara-por-dia', 'CasosCearaController@casosCearaPorDia');
-Route::get('/quantidade-casos-confirmados-por-municipio', 'CasosCearaController@quantidadeCasosConfirmadorPorMunicipio');
+Route::get('/casos-novos-ceara-por-dia/{type?}', 'CasosCearaController@casosNovosCearaPorDia');
+Route::get('/casos-ceara-por-dia/{type?}', 'CasosCearaController@casosCearaPorDia');
+Route::get('/quantidade-casos-confirmados-por-municipio/{type?}', 'CasosCearaController@quantidadeCasosConfirmadorPorMunicipio');
