@@ -16,6 +16,9 @@ Plataforma para prover dados e indicadores do Ceará por meio de API.
 
 - https://dev.org.br/api/casos-ceara-internados (Retorna situação dos internados no Ceará) [Necessário token]
 
+## Retorno .csv
+Adicionar '/csv' no final da url, exemplo https://dev.org.br/api/casos-novos-ceara-por-dia/csv
+
 ## Servidor de desenvolvimento 🚀🚀
 
 
