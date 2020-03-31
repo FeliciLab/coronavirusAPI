@@ -1,26 +1,41 @@
-<p align="center">
-  <img src="https://coronavirus.ceara.gov.br/wp-content/uploads/2020/03/logo_espce_gov-1.png" width="100%" float="center"/>
+<p align="right">
+  <img src="https://coronavirus.ceara.gov.br/wp-content/uploads/2020/03/Logo-Corona-Logo-SesaCe.png" width="60%" float="left" />
 </p>
 
-## Sobre coronavirusapi
+## Sobre a API Coronavírus Ceará
 
 Plataforma para prover dados e indicadores do Ceará por meio de API.
 
+Nessa API estamos disponibilizando os dados que alimentam o [Painel Epidemiológico da COVID-19 no Ceará](https://coronavirus.ceara.gov.br/painel).
+
 ### Endpoints
 
-- https://dev.org.br/api/casos-novos-ceara-por-dia (Retorna a quantidade novos casos por dia no Ceará) 
+#### https://dev.org.br/api/casos-novos-ceara-por-dia
+Retorna a quantidade novos casos por dia no Ceará
+```
+{
+    "id":1,
+    "data":"2020-03-15",
+    "qtdnovoscasos":3
+}
+```
 
-- https://dev.org.br/api/casos-ceara-por-dia (Retorna a quantidade de casos por dia no Ceará (municipios))
+#### https://dev.org.br/api/casos-ceara-por-dia
+Retorna a quantidade de casos por dia no Ceará (municipios)
 
-- https://dev.org.br/api/quantidade-casos-confirmados-por-municipio (Retorna a quantidade de casos por situação confirmada e por município no Ceará) 
+#### https://dev.org.br/api/quantidade-casos-confirmados-por-municipio
+Retorna a quantidade de casos por situação confirmada e por município no Ceará
 
-- https://dev.org.br/api/casos-ceara-internados (Retorna situação dos internados no Ceará) [Necessário token]
+#### https://dev.org.br/api/casos-ceara-internados
+Retorna situação dos internados no Ceará [Necessário token]
+
 
 ## Retorno .csv
 Adicionar '/csv' no final da url, exemplo https://dev.org.br/api/casos-novos-ceara-por-dia/csv
 
-## Servidor de desenvolvimento 🚀🚀
 
+
+# Servidor de desenvolvimento 🚀🚀
 
 Clonando o projeto
 
@@ -72,4 +87,8 @@ Gerar Application Key
 php artisan key:generate
 ```
 
+---
 
+<p align="center">
+  <img src="https://coronavirus.ceara.gov.br/wp-content/uploads/2020/03/logo_espce_gov-1.png" width="40%" float="center"/>
+</p>
