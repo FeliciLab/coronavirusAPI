@@ -27,7 +27,10 @@ Retorna a quantidade de casos por dia no Ceará (municipios)
 Retorna a quantidade de casos por situação confirmada e por município no Ceará
 
 #### https://dev.org.br/api/casos-ceara-internados
-Retorna situação dos internados no Ceará [Necessário token]
+Retorna situação dos internados no Ceará
+
+#### https://dev.org.br/api/internados-por-unidade-de-saude
+Retorna internados por unidade de saúde no Ceará [Necessário token]
 
 
 ## Retorno .csv
