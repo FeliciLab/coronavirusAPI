@@ -12,13 +12,6 @@ Nessa API estamos disponibilizando os dados que alimentam o [Painel Epidemiológ
 
 #### https://dev.org.br/api/casos-novos-ceara-por-dia
 Retorna a quantidade novos casos por dia no Ceará
-```
-{
-    "id":1,
-    "data":"2020-03-15",
-    "qtdnovoscasos":3
-}
-```
 
 #### https://dev.org.br/api/casos-ceara-por-dia
 Retorna a quantidade de casos por dia no Ceará (municipios)
