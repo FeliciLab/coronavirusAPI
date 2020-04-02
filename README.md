@@ -7,9 +7,6 @@
 Plataforma para prover dados e indicadores epidemiológicos sobre Coronavírus (COVID-19) no Ceará, por meio de API Pública.
 
 Nessa API estamos disponibilizando os dados que alimentam o [Painel Epidemiológico da COVID-19 no Ceará](https://coronavirus.ceara.gov.br/painel).
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/89998/78218337-0076f800-7494-11ea-8c57-2d7eea57df89.png" width="50%">
-</p>
 
 ## Endpoints
 
