@@ -26,9 +26,6 @@ Retorna a quantidade novos casos por dia no Ceará
 #### https://dev.org.br/api/casos-ceara-por-dia
 Retorna a quantidade de casos por dia no Ceará (municipios)
 
-#### https://dev.org.br/api/quantidade-casos-confirmados-por-municipio
-Retorna a quantidade de casos por situação confirmada e por município no Ceará
-
 #### https://dev.org.br/api/casos-ceara-internados
 Retorna situação dos internados no Ceará
 

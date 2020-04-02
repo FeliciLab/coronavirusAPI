@@ -38,17 +38,6 @@ class CasosCearaController extends Controller
         return response()->json($dados);
     }
 
-    public function quantidadeCasosConfirmadorPorMunicipio(Request $request, $type = null)
-    {
-        $dados = QtdPorMunicipio::all();
-
-        if ($type == Controller::TYPE_RETURN_CSV) {
-            return $this->returnObjectCsv()->build($dados, Schema::getColumnListing('qtdpormunicipio'))->download();
-        }
-
-        return response()->json($dados);
-    }
-
     public function casosCearaInternados(Request $request, $type = null)
     {
         $dados = CasosCearaInternados::all();
