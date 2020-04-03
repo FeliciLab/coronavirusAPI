@@ -39,15 +39,15 @@ Retorna internados por unidade de saúde no Ceará [Necessário token]
 
 ### Rotas para os Gráficos
 
-  * https://dev.org.br/graphic/casos-por-dia - Gráfico em Linha mostrando o quantitativo de novos casos por dia.
+  * https://dev.org.br/dash/casos-por-dia - Gráfico em Linha mostrando o quantitativo de novos casos por dia.
 
-  * https://dev.org.br/graphic/curva-epidemiologica - Gráfico em linha mostrando o quantidade de casos acumulados por dia
+  * https://dev.org.br/dash/curva-epidemiologica - Gráfico em linha mostrando o quantidade de casos acumulados por dia
 
-  * https://dev.org.br/graphic/tabela-casos-por-municipio - Tabela descitiva com cada caso por município.
+  * https://dev.org.br/dash/tabela-casos-por-municipio - Tabela descitiva com cada caso por município.
 
-  * https://dev.org.br/graphic/rosca-casos-por-municipio - Gráfico circular com cada caso confirmado por município.
+  * https://dev.org.br/dash/rosca-casos-por-municipio - Gráfico circular com cada caso confirmado por município.
 
-  * https://dev.org.br/graphic/casos-curvas - Conjunto composto pelo Gráfico Linear de novos casos por dia e o gráfico linear da curva Epidemiológica.
+  * https://dev.org.br/dash/casos-curvas - Conjunto composto pelo Gráfico Linear de novos casos por dia e o gráfico linear da curva Epidemiológica.
 
 ## Retorno .csv
 Adicionar '/csv' no final da url, exemplo https://dev.org.br/api/casos-novos-ceara-por-dia/csv

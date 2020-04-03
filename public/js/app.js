@@ -34845,31 +34845,31 @@ __webpack_require__.r(__webpack_exports__);
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 var routes = [{
-  path: '/graphic/casos-por-dia',
+  path: '/dash/casos-por-dia',
   name: 'Casos por dia',
   component: function component() {
     return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, /*! ../views/CasosPorDia */ "./resources/js/views/CasosPorDia.vue"));
   }
 }, {
-  path: '/graphic/curva-epidemiologica',
+  path: '/dash/curva-epidemiologica',
   name: 'Casos por dia',
   component: function component() {
     return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! ../views/CurvaEpidemiologica */ "./resources/js/views/CurvaEpidemiologica.vue"));
   }
 }, {
-  path: '/graphic/tabela-casos-por-municipio',
+  path: '/dash/tabela-casos-por-municipio',
   name: 'Tabela Casos Por Municipio',
   component: function component() {
     return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ../views/TabelaPorMunicipio */ "./resources/js/views/TabelaPorMunicipio.vue"));
   }
 }, {
-  path: '/graphic/rosca-casos-por-municipio',
+  path: '/dash/rosca-casos-por-municipio',
   name: 'rosca Casos Por Municipio',
   component: function component() {
     return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(3)]).then(__webpack_require__.bind(null, /*! ../views/RoscaCasosPorMunicipio */ "./resources/js/views/RoscaCasosPorMunicipio.vue"));
   }
 }, {
-  path: '/graphic/casos-curvas',
+  path: '/dash/casos-curvas',
   name: 'Casos Curva',
   component: function component() {
     return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! ../views/CasosCurvas */ "./resources/js/views/CasosCurvas.vue"));

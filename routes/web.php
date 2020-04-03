@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/graphic/{any}','HomeController@index')->name('home.index')->where('any', '.*');
+Route::get('/dash/{any}','HomeController@index')->name('home.index')->where('any', '.*');

@@ -8,27 +8,27 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/graphic/casos-por-dia',
+    path: '/dash/casos-por-dia',
     name: 'Casos por dia',
     component: () => import ('../views/CasosPorDia')
   },
   {
-    path: '/graphic/curva-epidemiologica',
+    path: '/dash/curva-epidemiologica',
     name: 'Casos por dia',
     component: () => import ('../views/CurvaEpidemiologica')
   },
   {
-    path: '/graphic/tabela-casos-por-municipio',
+    path: '/dash/tabela-casos-por-municipio',
     name: 'Tabela Casos Por Municipio',
     component: () => import ('../views/TabelaPorMunicipio')
   },
   {
-    path: '/graphic/rosca-casos-por-municipio',
+    path: '/dash/rosca-casos-por-municipio',
     name: 'rosca Casos Por Municipio',
     component: () => import ('../views/RoscaCasosPorMunicipio')
   },
   {
-    path: '/graphic/casos-curvas',
+    path: '/dash/casos-curvas',
     name: 'Casos Curva',
     component: () => import('../views/CasosCurvas')
   }
