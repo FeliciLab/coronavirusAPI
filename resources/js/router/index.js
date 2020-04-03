@@ -13,6 +13,11 @@ const routes = [
     component: () => import ('../views/CasosPorDia')
   },
   {
+    path: '/graphic/curva-epidemiologica',
+    name: 'Casos por dia',
+    component: () => import ('../views/CurvaEpidemiologica')
+  },
+  {
     path: '/graphic/tabela-casos-por-municipio',
     name: 'Tabela Casos Por Municipio',
     component: () => import ('../views/TabelaPorMunicipio')

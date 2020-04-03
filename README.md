@@ -19,10 +19,15 @@ Plataforma para prover dados e indicadores do Ceará por meio de API.
 
 ### Rotas para os Gráficos
 
-  https://dev.org.br/graphic/casos-por-dia -
-  https://dev.org.br/graphic/tabela-casos-por-municipio -
-  https://dev.org.br/graphic/rosca-casos-por-municipio -
-  https://dev.org.br/casos-epidemiologicos -
+  * https://dev.org.br/graphic/casos-por-dia - Gráfico em Linha mostrando o quantitativo de novos casos por dia.
+
+  * https://dev.org.br/graphic/curva-epidemiologica - Gráfico em linha mostrando o quantidade de casos acumulados por dia
+
+  * https://dev.org.br/graphic/tabela-casos-por-municipio - Tabela descitiva com cada caso por município.
+
+  * https://dev.org.br/graphic/rosca-casos-por-municipio - Gráfico circular com cada caso confirmado por município.
+
+  * https://dev.org.br/graphic/casos-epidemiologicos - Conjunto composto pelo Gráfico Linear de novos casos por dia e o gráfico linear da curva Epidemiológica.
 
 ## Retorno .csv
 Adicionar '/csv' no final da url, exemplo https://dev.org.br/api/casos-novos-ceara-por-dia/csv
@@ -80,4 +85,24 @@ Gerar Application Key
 php artisan key:generate
 ```
 
+Para servir a aplicação na parte de gráficos você precisará:
+
+
+* Instalar as dependências do Node.
+```
+npm install
+
+```
+ou se estiver utilizando o Yarn como seu gerenciador de pacotes
+```
+yarn install
+```
+
+* Servir a aplicação para o desenvolvimento.
+```
+npm run watch
+```
+```
+yarn watch
+```
 

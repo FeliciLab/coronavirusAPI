@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import CurvaEpidemiologica from '../visualization/CurvaEpidemiologica'
+import CurvaEpidemiologica from '../components/visualizations/CurvaEpidemiologica'
 export default {
   components: {
     CurvaEpidemiologica
