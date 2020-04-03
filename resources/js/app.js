@@ -1,10 +1,11 @@
 import './bootstrap'
 import Vue from 'vue'
-import router from '../js/routes'
-import App from './components/App.vue'
-Vue.component('App', require('./components/App.vue').default)
+import router from '../js/router'
+import App from './App.vue'
+Vue.component('App', require('./App.vue').default)
 
 new Vue({
+    el: '#app',
+    components: {App},
     router,
-    render: h => h(App)
-  }).$mount('#app')
+  })

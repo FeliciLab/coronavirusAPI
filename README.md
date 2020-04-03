@@ -8,13 +8,21 @@ Plataforma para prover dados e indicadores do Ceará por meio de API.
 
 ### Endpoints
 
-- https://dev.org.br/api/casos-novos-ceara-por-dia (Retorna a quantidade novos casos por dia no Ceará) 
+- https://dev.org.br/api/casos-novos-ceara-por-dia (Retorna a quantidade novos casos por dia no Ceará)
 
 - https://dev.org.br/api/casos-ceara-por-dia (Retorna a quantidade de casos por dia no Ceará (municipios))
 
-- https://dev.org.br/api/quantidade-casos-confirmados-por-municipio (Retorna a quantidade de casos por situação confirmada e por município no Ceará) 
+- https://dev.org.br/api/quantidade-casos-confirmados-por-municipio (Retorna a quantidade de casos por situação confirmada e por município no Ceará)
 
 - https://dev.org.br/api/casos-ceara-internados (Retorna situação dos internados no Ceará) [Necessário token]
+
+
+### Rotas para os Gráficos
+
+  https://dev.org.br/graphic/casos-por-dia -
+  https://dev.org.br/graphic/tabela-casos-por-municipio -
+  https://dev.org.br/graphic/rosca-casos-por-municipio -
+  https://dev.org.br/casos-epidemiologicos -
 
 ## Retorno .csv
 Adicionar '/csv' no final da url, exemplo https://dev.org.br/api/casos-novos-ceara-por-dia/csv

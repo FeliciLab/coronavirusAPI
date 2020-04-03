@@ -1,9 +1,9 @@
 <template>
 <div class="row" v-if="data.length != 0">
   <div class="col-12">
-    <RoscaPorMunicipio :data="data" :options="options"/>
+    <Doughnut :data="data"/>
   </div>
-  <div class="col-12">
+  <div class="col-12 mt-3">
     <div class="row justify-content-center" v-for="(item, index) in cities" :key="item.municipio">
       <div class="col-6 d-flex align-items-center justify-content-start">
         <div class="d-flex w-100 ml-5 ml-md-0 justify-content-md-center">
@@ -20,26 +20,19 @@
 </template>
 
 <script>
-import RoscaPorMunicipio from '../charts/RoscaPorMunicipio'
-import { colors, sortByQuantity, filterByDate } from '../../helpers'
+import Doughnut from '../charts/Doughnut'
+import { colors, sortByQuantity, filterByDate } from '../../helpers.js'
 import api from '../../services/api'
 export default {
   components: {
-    RoscaPorMunicipio
+    Doughnut
   },
   data () {
     return {
       classes: colors.map(color => color.class),
       colors: colors.map(color => color.hex),
       data: [],
-      cities: [],
-      options: {
-        maintainAspectRatio: false,
-        legend: {
-          display: false,
-          segmentShowStroke: false
-        }
-      }
+      cities: []
     }
   },
 

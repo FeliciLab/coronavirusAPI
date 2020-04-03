@@ -1,18 +1,14 @@
 <template>
-    <div>
-        <table class="table">
-            <tbody>
-                <tr v-for="city in cities" :key="city.municipio">
-                    <td>{{ city.municipio}}</td>
-                    <td class="text-right">{{ city.quantidade }}</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="row card">
+        <div class="col-12 col-md-4">
+            <TabelaCasosPorMunicipio />
+        </div>
+        <!-- <div class="col-12 col-md-8"></div> -->
     </div>
 </template>
 
 <script>
-import api from '../../services/api'
+import api from '@/services/api'
 export default {
   data () {
     return {
