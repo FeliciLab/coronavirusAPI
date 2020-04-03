@@ -7,6 +7,7 @@ use App\Models\CasosCearaInternados;
 use App\Models\CasosCearaPorDia;
 use App\Models\CasosCearaUti;
 use App\Models\CasosNovosCearaPorDia;
+use App\Models\InternadosPorUnidadeDeSaude;
 use App\Models\QtdPorMunicipio;
 use App\Models\QtdPorSituacao;
 use Illuminate\Http\Request;
@@ -54,6 +55,17 @@ class CasosCearaController extends Controller
 
         if ($type == Controller::TYPE_RETURN_CSV) {
             return $this->returnObjectCsv()->build($dados, Schema::getColumnListing('casoscearainternados'))->download();
+        }
+
+        return response()->json($dados);
+    }
+
+    public function internadosPorUnidadeDeSaude(Request $request, $type = null)
+    {
+        $dados = InternadosPorUnidadeDeSaude::all();
+
+        if ($type == Controller::TYPE_RETURN_CSV) {
+            return $this->returnObjectCsv()->build($dados, Schema::getColumnListing('internadosporunidadedesaude'))->download();
         }
 
         return response()->json($dados);
