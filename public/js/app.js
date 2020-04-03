@@ -34848,19 +34848,19 @@ var routes = [{
   path: '/graphic/casos-por-dia',
   name: 'Casos por dia',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! ../views/CasosPorDia */ "./resources/js/views/CasosPorDia.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, /*! ../views/CasosPorDia */ "./resources/js/views/CasosPorDia.vue"));
   }
 }, {
   path: '/graphic/curva-epidemiologica',
   name: 'Casos por dia',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(8), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! ../views/CurvaEpidemiologica */ "./resources/js/views/CurvaEpidemiologica.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! ../views/CurvaEpidemiologica */ "./resources/js/views/CurvaEpidemiologica.vue"));
   }
 }, {
   path: '/graphic/tabela-casos-por-municipio',
   name: 'Tabela Casos Por Municipio',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(4)]).then(__webpack_require__.bind(null, /*! ../views/TabelaPorMunicipio */ "./resources/js/views/TabelaPorMunicipio.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ../views/TabelaPorMunicipio */ "./resources/js/views/TabelaPorMunicipio.vue"));
   }
 }, {
   path: '/graphic/rosca-casos-por-municipio',
@@ -34869,10 +34869,10 @@ var routes = [{
     return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(3)]).then(__webpack_require__.bind(null, /*! ../views/RoscaCasosPorMunicipio */ "./resources/js/views/RoscaCasosPorMunicipio.vue"));
   }
 }, {
-  path: '/graphic/casos-epidemiologicos',
-  name: 'Casos Epidemiologicos',
+  path: '/graphic/casos-curvas',
+  name: 'Casos Curva',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(8), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! ../views/CasosEpidemiologicos */ "./resources/js/views/CasosEpidemiologicos.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(1), __webpack_require__.e(2), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! ../views/CasosCurvas */ "./resources/js/views/CasosCurvas.vue"));
   }
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({

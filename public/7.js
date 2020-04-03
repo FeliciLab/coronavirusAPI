@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module '../visualizations/CurvaEpidemiologica'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _components_visualizations_CurvaEpidemiologica__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/visualizations/CurvaEpidemiologica */ "./resources/js/components/visualizations/CurvaEpidemiologica.vue");
 //
 //
 //
@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    CurvaEpidemiologica: !(function webpackMissingModule() { var e = new Error("Cannot find module '../visualizations/CurvaEpidemiologica'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())
+    CurvaEpidemiologica: _components_visualizations_CurvaEpidemiologica__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 

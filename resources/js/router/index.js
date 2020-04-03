@@ -28,9 +28,9 @@ const routes = [
     component: () => import ('../views/RoscaCasosPorMunicipio')
   },
   {
-    path: '/graphic/casos-epidemiologicos',
-    name: 'Casos Epidemiologicos',
-    component: () => import('../views/CasosEpidemiologicos')
+    path: '/graphic/casos-curvas',
+    name: 'Casos Curva',
+    component: () => import('../views/CasosCurvas')
   }
 ]
 

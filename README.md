@@ -47,7 +47,7 @@ Retorna internados por unidade de saúde no Ceará [Necessário token]
 
   * https://dev.org.br/graphic/rosca-casos-por-municipio - Gráfico circular com cada caso confirmado por município.
 
-  * https://dev.org.br/graphic/casos-epidemiologicos - Conjunto composto pelo Gráfico Linear de novos casos por dia e o gráfico linear da curva Epidemiológica.
+  * https://dev.org.br/graphic/casos-curvas - Conjunto composto pelo Gráfico Linear de novos casos por dia e o gráfico linear da curva Epidemiológica.
 
 ## Retorno .csv
 Adicionar '/csv' no final da url, exemplo https://dev.org.br/api/casos-novos-ceara-por-dia/csv
