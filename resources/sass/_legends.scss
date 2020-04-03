@@ -29,6 +29,6 @@
 
   @each $key, $color in $colors {
     .legend-#{$key} {
-      background-color: #{$color}
+      background-color: #{$color};
     }
   }
