@@ -1,36 +1,37 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import CasosPorDia from '../views/CasosPorDia.vue'
-// import TabelaCasosPorMunicipio from '../views/TabelaPorMunicipio'
-// import RoscaCasosPorMunicipio from '../views/RoscaCasosPorMunicipio'
-// import CasosEpidemiologicos from '../views/CasosEpidemiologicos'
+import CasosPorDia from '../views/CasosPorDia.vue'
+import TabelaCasosPorMunicipio from '../views/TabelaPorMunicipio'
+import RoscaCasosPorMunicipio from '../views/RoscaCasosPorMunicipio'
+import CasosCurvas from '../views/CasosCurvas'
+import CurvaEpidemiologica from '../views/CurvaEpidemiologica'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/dash/casos-por-dia',
     name: 'Casos por dia',
-    component: () => import ('../views/CasosPorDia')
+    component: CasosPorDia
   },
   {
     path: '/dash/curva-epidemiologica',
     name: 'Casos por dia',
-    component: () => import ('../views/CurvaEpidemiologica')
+    component: CurvaEpidemiologica
   },
   {
     path: '/dash/tabela-casos-por-municipio',
     name: 'Tabela Casos Por Municipio',
-    component: () => import ('../views/TabelaPorMunicipio')
+    component: TabelaCasosPorMunicipio
   },
   {
     path: '/dash/rosca-casos-por-municipio',
     name: 'rosca Casos Por Municipio',
-    component: () => import ('../views/RoscaCasosPorMunicipio')
+    component: RoscaCasosPorMunicipio
   },
   {
     path: '/dash/casos-curvas',
     name: 'Casos Curva',
-    component: () => import('../views/CasosCurvas')
+    component: CasosCurvas
   }
 ]
 
