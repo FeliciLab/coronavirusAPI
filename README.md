@@ -2,6 +2,17 @@
   <img src="https://coronavirus.ceara.gov.br/wp-content/uploads/2020/03/Logo-Corona-Logo-SesaCe.png" width="60%" float="left" />
 </p>
 
+# ATENÇÃO - Instabilidade Temporária
+    
+Houve uma mudança no fornecimento dos dados por parte da Vigilância Epidemiológica, definindo que o Boletim Epidemiológico deixa de ser uma publicação diária em PDF, e passa a ser um [Painel Dinâmico](https://indicadores.integrasus.saude.ce.gov.br/indicadores/indicadores-coronavirus) dentro do [IntegraSUS](http://integrasus.saude.ce.gov.br/) - que é a plataforma de transparência da gestão pública de saúde do Ceará.
+
+Em função disso, a API documentada abaixo, que reflete os dados dos Boletins Epidemiológicos em PDF, está em processo de revisão, uma vez que o IntegraSUS já tem [sua própria API](https://github.com/EscolaDeSaudePublica/coronavirusAPI/issues/17).
+
+Enquanto resolvemos essa questão, abrimos [essa issue documentando todos os endpoints do painel do IntegraSUS](https://github.com/EscolaDeSaudePublica/coronavirusAPI/issues/17).
+
+Para facilitar nossa capacidade de resposta, solicitamos que abram Issues para registrar quaisquer dúvidas, sugestões, críticas ou insconsistências nos dados.
+
+
 ## Sobre a API Coronavírus Ceará
 
 Plataforma para prover dados e indicadores epidemiológicos sobre Coronavírus (COVID-19) no Ceará, por meio de API Pública.
