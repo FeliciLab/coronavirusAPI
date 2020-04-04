@@ -1,7 +1,3 @@
-<p align="right">
-  <img src="https://coronavirus.ceara.gov.br/wp-content/uploads/2020/03/Logo-Corona-Logo-SesaCe.png" width="60%" float="left" />
-</p>
-
 # ATENÇÃO - Instabilidade Temporária
     
 Houve uma mudança no fornecimento dos dados por parte da Vigilância Epidemiológica, definindo que o Boletim Epidemiológico deixa de ser uma publicação diária em PDF, e passa a ser um [Painel Dinâmico](https://indicadores.integrasus.saude.ce.gov.br/indicadores/indicadores-coronavirus) dentro do [IntegraSUS](http://integrasus.saude.ce.gov.br/) - que é a plataforma de transparência da gestão pública de saúde do Ceará.
@@ -12,6 +8,10 @@ Enquanto resolvemos essa questão, abrimos [essa issue documentando todos os end
 
 Para facilitar nossa capacidade de resposta, solicitamos que abram Issues para registrar quaisquer dúvidas, sugestões, críticas ou insconsistências nos dados.
 
+
+<p align="right">
+  <img src="https://coronavirus.ceara.gov.br/wp-content/uploads/2020/03/Logo-Corona-Logo-SesaCe.png" width="60%" float="left" />
+</p>
 
 ## Sobre a API Coronavírus Ceará
 
