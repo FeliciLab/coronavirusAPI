@@ -18,9 +18,7 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('/internados-por-unidade-de-saude/{type?}', 'CasosCearaController@internadosPorUnidadeDeSaude');
 });
 
-Route::middleware('cors')->group(function () {
-    Route::get('/casos-ceara-internados/{type?}', 'CasosCearaController@casosCearaInternados');
-    Route::get('/casos-novos-ceara-por-dia/{type?}', 'CasosCearaController@casosNovosCearaPorDia');
-    Route::get('/casos-ceara-por-dia/{type?}', 'CasosCearaController@casosCearaPorDia');
-    Route::get('/quantidade-casos-confirmados-por-municipio/{type?}', 'CasosCearaController@quantidadeCasosConfirmadorPorMunicipio');
-});
+Route::get('/casos-ceara-internados/{type?}', 'CasosCearaController@casosCearaInternados');
+Route::get('/casos-novos-ceara-por-dia/{type?}', 'CasosCearaController@casosNovosCearaPorDia');
+Route::get('/casos-ceara-por-dia/{type?}', 'CasosCearaController@casosCearaPorDia');
+Route::get('/quantidade-casos-confirmados-por-municipio/{type?}', 'CasosCearaController@quantidadeCasosConfirmadorPorMunicipio');
