@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import CasosPorDia from '../views/CasosPorDia.vue'
-import TabelaCasosPorMunicipio from '../views/TabelaPorMunicipio'
+import CurvaEpidemiologica from '../views/CurvaEpidemiologica'
+import TabelaPorMunicipio from '../views/TabelaPorMunicipio'
 import RoscaCasosPorMunicipio from '../views/RoscaCasosPorMunicipio'
 import CasosCurvas from '../views/CasosCurvas'
-import CurvaEpidemiologica from '../views/CurvaEpidemiologica'
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,7 +21,7 @@ const routes = [
   {
     path: '/dash/tabela-casos-por-municipio',
     name: 'Tabela Casos Por Municipio',
-    component: TabelaCasosPorMunicipio
+    component: TabelaPorMunicipio
   },
   {
     path: '/dash/rosca-casos-por-municipio',
